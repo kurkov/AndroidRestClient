@@ -14,7 +14,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/URLtv"
@@ -24,10 +24,9 @@
 
         <EditText
             android:id="@+id/urlRequest"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="message"
+            android:hint="url"
             android:inputType="textUri" />
 
     </LinearLayout>
@@ -41,7 +40,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
-            android:id="@+id/responseData" />
+            android:id="@+id/requestData"
+            android:hint="Request Data"/>
     </ScrollView>
 
     <LinearLayout
@@ -51,25 +51,25 @@
 
         <Button
             android:id="@+id/btnGet"
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:text="Get" />
 
         <Button
             android:id="@+id/btnPost"
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:text="Post" />
 
         <Button
             android:id="@+id/btnPut"
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:text="Put" />
 
         <Button
             android:id="@+id/btnDelete"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Delete" />
 
@@ -77,14 +77,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/scrollView2" >
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
-            android:id="@+id/requestData" />
+            android:id="@+id/responseData"
+            android:hint="Response Data"/>
     </ScrollView>
 
 </LinearLayout>
