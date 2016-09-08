@@ -27,7 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="url"
-            android:inputType="textUri" />
+            android:inputType="textUri"
+            android:text="message/1" />
 
     </LinearLayout>
 
